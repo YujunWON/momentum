@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>나만의 동기부여 홈화면 만들기</title>
-
+    <title>To-do November, 2022</title>
     <script src="index.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -18,17 +17,17 @@
         }
 
         body {
-                background-image: url("https://images.unsplash.com/photo-1667803824512-0ce9871b7891?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80");
+                background-image: url("https://wallpaperaccess.com/full/670445.jpg");
                 background-position: center;
                 color: white;
         }
         .time {
-            font-size: 80px;
+            font-size: 50px;
             font-weight: bold;
         }
 
         .greeting {
-            font-size: 50px;
+            font-size: 40px;
         }
 
         .todo {
@@ -44,7 +43,6 @@
             width: 100vw;
             height: 80vh;
 
-            /* 화면을 가운데로 몰아넣는 코드 */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -68,16 +66,16 @@
 
 <body>
     <div class="main">
-        <div id="time" class="time">12:00</div>
-        <div class="greeting">Hello, Yujun</div>
-        <div class="todo">일 3시간 알고리즘 공부하기</div>
+        <div id="y_m_d" class="time"></div>
+        <div id="h_m" class="time"></div>
+        <div class="greeting">Cheer Up! You can do it!</div>
+        <div class="todo">SSAFY 준비</div>
+        <div class="todo">Python-Swift 코딩테스트 공부</div>
+        <div class="todo">OPiC 준비</div>
     </div>
     <div class="quote">
-        <div id="author" class="author">- 명언의 저자 -</div>
-        <div id="content" class="content">" 명언의 내용 "</div>
+        <div id="author" class="author"></div>
+        <div id="content" class="content"></div>
     </div>
 </body>
-
-
-
 </html>
